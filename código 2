@@ -1,0 +1,27 @@
+/******************************************************************************
+# Projeto baseado em linguagem C
+Erik Henry Kenzo Kato
+Saber o salário total de um funcionário.
+*******************************************************************************/
+
+#include <stdio.h>
+int main()
+{
+    float salFixo, vendas, salTotal;
+    
+    printf("Digite o seu salário fixo: ");
+    scanf("%f", &salFixo);
+    printf("Digite o valor das vendas: ");
+    scanf("%f", &vendas);
+    
+    if (vendas > 1500)
+     salTotal = 1500 * 3 / 100 + (vendas - 1500) * 5 / 100;
+   
+    else
+    salTotal = 1500 * 3 / 100;
+    
+    salTotal = salTotal + salFixo;
+    printf("%0.3f", salTotal);
+
+    return 0;
+}
