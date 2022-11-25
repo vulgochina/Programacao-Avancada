@@ -1,0 +1,22 @@
+/******************************************************************************
+# Projeto baseado em linguagem C
+Erik Henry Kenzo Kato
+Informar em qual das três posições colocadas está o maior número.
+*******************************************************************************/
+
+#include <stdio.h>
+int main()
+{
+    int a,b,c,posi, maior;
+    
+    printf("digite 3 numeros:");
+    scanf("%d %d %d", &a,&b,&c);
+    
+    maior=a; posi=1;
+    if (b>maior) {maior=b; posi=2;}
+    if (c>maior) {maior=c; posi=3;}
+    
+    printf("maior esta na posicao %d", posi);
+
+    return 0;
+}
